@@ -1,21 +1,72 @@
-# Project 3: Spots
+# Spots
 
-### Overview  
+## Project Description
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+**Spots** is a responsive image-sharing webpage built as part of the TripleTen Software Engineering program.  
+In this stage of the project, the focus is on **responsive design**, ensuring the layout adapts smoothly across desktop, tablet, and mobile screen sizes.
+
+The page allows users to:
+
+- View a profile section
+- Browse image cards arranged in a responsive grid
+- Experience consistent layout and styling across different devices
+
+---
+
+## Functionality
+
+- Fully responsive layout for:
+  - **Desktop (1320px and wider)** — 3 cards per row
+  - **Tablet (630px–1320px)** — 2 cards per row
+  - **Mobile (320px–630px)** — stacked layout optimized for small screens
+- Page content is centered with a maximum width of **1280px**
+- Responsive card grid built with **CSS Grid**
+- Profile section adapts from row layout (desktop) to column layout (mobile)
+- Text overflow is handled using:
+  - Ellipsis for single-line text
+  - Multi-line truncation for longer profile text
+- Hover states implemented according to the UI Toolkit
+- No horizontal scrolling at any screen size
+
+---
+
+## Technologies & Techniques Used
+
+- **HTML**
+- **CSS**
+- **CSS Grid**
+- **Flexbox**
+- **Media Queries**
+- **Responsive design principles**
+- **Text overflow handling**
+- **BEM naming convention**
+- **Figma** for layout and design reference
+
+---
+
+## Screenshots
+
+![Desktop View](./images/desktop-view.png)
+![Tablet View](./images/tablet-view.png)
+![Mobile View](./images/mobile-view.png)
+
+---
+
+## Live Project
+
+🔗 GitHub Pages Deployment:
+https://your-username.github.io/se_project_spots/
+
+---
+
+## Project Pitch Video
+
+📽️ Video Presentation:
+[Link to your project pitch video here]
+
+---
+
+## Notes
+
+This project was completed following the provided Figma designs and TripleTen project guidelines.
+All responsiveness was implemented using CSS only, without JavaScript, as required for this stage.
