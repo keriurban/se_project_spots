@@ -55,7 +55,7 @@ The page allows users to:
 ## Live Project
 
 🔗 GitHub Pages Deployment:
-https://your-username.github.io/se_project_spots/
+https://keriurban.github.io/se_project_spots/
 
 ---
 
