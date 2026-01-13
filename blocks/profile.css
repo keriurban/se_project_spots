@@ -7,6 +7,7 @@
   height: 190px;
   width: 190px;
   border-radius: 8px;
+  object-fit: cover;
 }
 .profile__column {
   margin-left: 20px;
@@ -30,7 +31,6 @@
 .profile__description {
   font-size: 16px;
   margin: 12px 0 0;
-  opacity: 70%;
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -52,6 +52,7 @@
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
+  color: #212121;
 }
 
 .profile__edit-button:hover {

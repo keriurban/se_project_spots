@@ -62,7 +62,8 @@ https://keriurban.github.io/se_project_spots/
 ## Project Pitch Video
 
 📽️ Video Presentation:
-[Link to your project pitch video here]
+Check out [this video](https://drive.google.com/file/d/1vfA_4bieHi8SPo3zAxnQPB_mryaPVM06/view?usp=sharing), where I describe my
+project and some challenges I faced while building it.
 
 ---
 
