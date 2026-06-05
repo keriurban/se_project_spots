@@ -17,39 +17,47 @@ const newImageInput = newPostModal.querySelector("#new-image-input");
 const newCaptionInput = newPostModal.querySelector("#new-caption-input");
 const newPostForm = newPostModal.querySelector(".modal__form");
 
+function openModal(modal) {
+  modal.classList.add("modal_is-opened");
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_is-opened");
+}
+
+function submitEditProfile(evt) {
+  evt.preventDefault();
+  profileName.textContent = profileNameInput.value;
+  profileDescription.textContent = profileDescriptionInput.value;
+  closeModal(editProfileModal);
+}
+
 profileEditBtn.addEventListener("click", function () {
-  editProfileModal.classList.add("modal_is-opened");
+  openModal(editProfileModal);
   profileNameInput.value = profileName.textContent;
   profileDescriptionInput.value = profileDescription.textContent;
 });
 
-function editProfileSubmit(evt) {
-  evt.preventDefault();
-  profileName.textContent = profileNameInput.value;
-  profileDescription.textContent = profileDescriptionInput.value;
-  editProfileModal.classList.remove("modal_is-opened");
-}
-
-editProfileForm.addEventListener("submit", editProfileSubmit);
+editProfileForm.addEventListener("submit", submitEditProfile);
 
 editProfileCloseBtn.addEventListener("click", function () {
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal);
 });
 
 profileAddBtn.addEventListener("click", function () {
-  newPostModal.classList.add("modal_is-opened");
+  openModal(newPostModal);
 });
 
-function newPostSubmit(evt) {
+function submitNewPost(evt) {
   evt.preventDefault();
   console.log(newImageInput.value);
   console.log(newCaptionInput.value);
 
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
 }
 
-newPostForm.addEventListener("submit", newPostSubmit);
+newPostForm.addEventListener("submit", submitNewPost);
 
 newPostCloseBtn.addEventListener("click", function () {
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
 });
