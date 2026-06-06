@@ -114,7 +114,6 @@
 
 @media screen and (max-width: 630px) {
   .modal__container {
-    max-width: 300px;
     padding: 22px 12px 12px;
   }
 

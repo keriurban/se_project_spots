@@ -54,6 +54,7 @@ function submitNewPost(evt) {
   console.log(newCaptionInput.value);
 
   closeModal(newPostModal);
+  newPostForm.reset();
 }
 
 newPostForm.addEventListener("submit", submitNewPost);
